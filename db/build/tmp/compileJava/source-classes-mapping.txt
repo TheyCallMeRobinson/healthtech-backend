@@ -1,5 +1,5 @@
-team/healthtech/db/entity/DiseaseEntity.java
- team.healthtech.db.entity.DiseaseEntity
+team/healthtech/db/entity/DoctorsSpecialitiesEntity.java
+ team.healthtech.db.entity.DoctorsSpecialitiesEntity
 team/healthtech/db/entity/AppointmentEntity.java
  team.healthtech.db.entity.AppointmentEntity
 team/healthtech/db/entity/TimeRecordEntity.java
@@ -32,8 +32,8 @@ team/healthtech/db/repository/CommentRepository.java
  team.healthtech.db.repository.CommentRepository
 team/healthtech/db/entity/AdminEntity.java
  team.healthtech.db.entity.AdminEntity
-team/healthtech/db/entity/DoctorEntity.java
- team.healthtech.db.entity.DoctorEntity
+team/healthtech/db/repository/AppointmentRepository.java
+ team.healthtech.db.repository.AppointmentRepository
 team/healthtech/db/repository/AllergyRepository.java
  team.healthtech.db.repository.AllergyRepository
 team/healthtech/db/repository/PatientRepository.java
@@ -48,7 +48,7 @@ team/healthtech/db/repository/AdminRepository.java
  team.healthtech.db.repository.AdminRepository
 team/healthtech/db/entity/AllergyEntity.java
  team.healthtech.db.entity.AllergyEntity
-team/healthtech/db/entity/DoctorsSpecialitiesEntity.java
- team.healthtech.db.entity.DoctorsSpecialitiesEntity
-team/healthtech/db/repository/AppointmentRepository.java
- team.healthtech.db.repository.AppointmentRepository
+team/healthtech/db/entity/DoctorEntity.java
+ team.healthtech.db.entity.DoctorEntity
+team/healthtech/db/entity/DiseaseEntity.java
+ team.healthtech.db.entity.DiseaseEntity

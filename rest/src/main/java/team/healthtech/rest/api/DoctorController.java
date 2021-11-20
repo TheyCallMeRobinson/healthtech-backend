@@ -22,7 +22,6 @@ public class DoctorController {
         this.service = service;
     }
 
-    @Secured("ROLE_ADMIN")
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public DoctorDto createDoctor(
@@ -36,7 +35,6 @@ public class DoctorController {
         return service.getAllDoctors();
     }
 
-    @Secured({"ROLE_ADMIN", "ROLE_DOCTOR"})
     @ResponseStatus(HttpStatus.OK)
     @PutMapping("/{doctorId}")
     public void updateDoctor(
@@ -46,7 +44,6 @@ public class DoctorController {
         service.updateDoctor(doctorDto, doctorId);
     }
 
-    @Secured({"ROLE_PATIENT", "ROLE_DOCTOR", "ROLE_ADMIN"})
     @ResponseStatus(HttpStatus.OK)
     @GetMapping("/{doctorId}")
     public DoctorDto findDoctor(
@@ -55,7 +52,6 @@ public class DoctorController {
         return service.getDoctorById(doctorId);
     }
 
-    @Secured("ROLE_ADMIN")
     @ResponseStatus(HttpStatus.OK)
     @DeleteMapping("/{doctorId}")
     public void deleteDoctor(

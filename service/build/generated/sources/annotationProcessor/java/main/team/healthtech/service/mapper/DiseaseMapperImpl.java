@@ -12,7 +12,7 @@ import team.healthtech.service.model.update_dto.DiseaseUpdateDto;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-08-09T11:39:18+0300",
+    date = "2021-11-20T15:29:02+0300",
     comments = "version: 1.4.2.Final, compiler: IncrementalProcessingEnvironment from gradle-language-java-6.8.jar, environment: Java 11.0.11 (Amazon.com Inc.)"
 )
 @Component

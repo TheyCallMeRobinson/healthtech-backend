@@ -15,7 +15,7 @@ services:
     depends_on:
       - postgres
     environment:
-      spring.datasource.url: jdbc:postgresql://postgres:5432/postgres
+      spring.datasource.url: jdbc:postgresql://192.168.0.16:35432/postgres
       spring.datasource.password: password
       spring.datasource.username: postgres
     links:
