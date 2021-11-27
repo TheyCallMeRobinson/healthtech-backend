@@ -13,7 +13,7 @@ import team.healthtech.service.model.create_dto.AppointmentCreateDto;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-11-20T15:29:02+0300",
+    date = "2021-11-27T15:40:59+0300",
     comments = "version: 1.4.2.Final, compiler: IncrementalProcessingEnvironment from gradle-language-java-6.8.jar, environment: Java 11.0.11 (Amazon.com Inc.)"
 )
 @Component
@@ -29,6 +29,12 @@ public class AppointmentMapperImpl implements AppointmentMapper {
 
         appointmentDto.setPatientId( entityPatientId( entity ) );
         appointmentDto.setDoctorId( entityTimeRecordDoctorId( entity ) );
+        appointmentDto.setDoctorFirstName( entityTimeRecordDoctorFirstName( entity ) );
+        appointmentDto.setDoctorMidName( entityTimeRecordDoctorMidName( entity ) );
+        appointmentDto.setDoctorLastName( entityTimeRecordDoctorLastName( entity ) );
+        appointmentDto.setPatientFirstName( entityPatientFirstName( entity ) );
+        appointmentDto.setPatientMidName( entityPatientMidName( entity ) );
+        appointmentDto.setPatientLastName( entityPatientLastName( entity ) );
         appointmentDto.setId( entity.getId() );
         appointmentDto.setTaken( entity.isTaken() );
         appointmentDto.setDatetime( entity.getDatetime() );
@@ -152,6 +158,108 @@ public class AppointmentMapperImpl implements AppointmentMapper {
             return null;
         }
         return id;
+    }
+
+    private String entityTimeRecordDoctorFirstName(AppointmentEntity appointmentEntity) {
+        if ( appointmentEntity == null ) {
+            return null;
+        }
+        TimeRecordEntity timeRecord = appointmentEntity.getTimeRecord();
+        if ( timeRecord == null ) {
+            return null;
+        }
+        DoctorEntity doctor = timeRecord.getDoctor();
+        if ( doctor == null ) {
+            return null;
+        }
+        String firstName = doctor.getFirstName();
+        if ( firstName == null ) {
+            return null;
+        }
+        return firstName;
+    }
+
+    private String entityTimeRecordDoctorMidName(AppointmentEntity appointmentEntity) {
+        if ( appointmentEntity == null ) {
+            return null;
+        }
+        TimeRecordEntity timeRecord = appointmentEntity.getTimeRecord();
+        if ( timeRecord == null ) {
+            return null;
+        }
+        DoctorEntity doctor = timeRecord.getDoctor();
+        if ( doctor == null ) {
+            return null;
+        }
+        String midName = doctor.getMidName();
+        if ( midName == null ) {
+            return null;
+        }
+        return midName;
+    }
+
+    private String entityTimeRecordDoctorLastName(AppointmentEntity appointmentEntity) {
+        if ( appointmentEntity == null ) {
+            return null;
+        }
+        TimeRecordEntity timeRecord = appointmentEntity.getTimeRecord();
+        if ( timeRecord == null ) {
+            return null;
+        }
+        DoctorEntity doctor = timeRecord.getDoctor();
+        if ( doctor == null ) {
+            return null;
+        }
+        String lastName = doctor.getLastName();
+        if ( lastName == null ) {
+            return null;
+        }
+        return lastName;
+    }
+
+    private String entityPatientFirstName(AppointmentEntity appointmentEntity) {
+        if ( appointmentEntity == null ) {
+            return null;
+        }
+        PatientEntity patient = appointmentEntity.getPatient();
+        if ( patient == null ) {
+            return null;
+        }
+        String firstName = patient.getFirstName();
+        if ( firstName == null ) {
+            return null;
+        }
+        return firstName;
+    }
+
+    private String entityPatientMidName(AppointmentEntity appointmentEntity) {
+        if ( appointmentEntity == null ) {
+            return null;
+        }
+        PatientEntity patient = appointmentEntity.getPatient();
+        if ( patient == null ) {
+            return null;
+        }
+        String midName = patient.getMidName();
+        if ( midName == null ) {
+            return null;
+        }
+        return midName;
+    }
+
+    private String entityPatientLastName(AppointmentEntity appointmentEntity) {
+        if ( appointmentEntity == null ) {
+            return null;
+        }
+        PatientEntity patient = appointmentEntity.getPatient();
+        if ( patient == null ) {
+            return null;
+        }
+        String lastName = patient.getLastName();
+        if ( lastName == null ) {
+            return null;
+        }
+        return lastName;
     }
 
     protected PatientEntity appointmentDtoToPatientEntity(AppointmentDto appointmentDto) {

@@ -15,14 +15,7 @@
       <jdbc-url>jdbc:postgresql://127.0.0.1:35432/postgres</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="postgres@servachok2021.ddns.net" uuid="d911d706-fe75-4af4-9487-9ebd4f12223c">
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://servachok2021.ddns.net:35432/postgres</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="postgres@servachok2021.ddns.net [2]" uuid="559e20e9-382d-4f6a-a002-b78c1888f90a">
+    <data-source source="LOCAL" name="postgres@servachok2021.ddns.net [3]" uuid="da0f2ace-48af-4406-b362-494067d8a267">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>

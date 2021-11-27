@@ -15,6 +15,24 @@ public class AppointmentDto {
     @JsonProperty("doctor_id")
     private Integer doctorId;
 
+    @JsonProperty("doctor_firstname")
+    private String doctorFirstName;
+
+    @JsonProperty("doctor_midname")
+    private String doctorMidName;
+
+    @JsonProperty("doctor_lastname")
+    private String doctorLastName;
+
+    @JsonProperty("patient_firstname")
+    private String patientFirstName;
+
+    @JsonProperty("patient_midname")
+    private String patientMidName;
+
+    @JsonProperty("patient_lastname")
+    private String patientLastName;
+
     @JsonProperty("is_taken")
     private Boolean isTaken;
 
@@ -82,4 +100,51 @@ public class AppointmentDto {
         this.recipe = recipe;
     }
 
+    public String getDoctorFirstName() {
+        return doctorFirstName;
+    }
+
+    public void setDoctorFirstName(String doctorFirstName) {
+        this.doctorFirstName = doctorFirstName;
+    }
+
+    public String getDoctorMidName() {
+        return doctorMidName;
+    }
+
+    public void setDoctorMidName(String doctorMidName) {
+        this.doctorMidName = doctorMidName;
+    }
+
+    public String getDoctorLastName() {
+        return doctorLastName;
+    }
+
+    public void setDoctorLastName(String doctorLastName) {
+        this.doctorLastName = doctorLastName;
+    }
+
+    public String getPatientFirstName() {
+        return patientFirstName;
+    }
+
+    public void setPatientFirstName(String patientFirstName) {
+        this.patientFirstName = patientFirstName;
+    }
+
+    public String getPatientMidName() {
+        return patientMidName;
+    }
+
+    public void setPatientMidName(String patientMidName) {
+        this.patientMidName = patientMidName;
+    }
+
+    public String getPatientLastName() {
+        return patientLastName;
+    }
+
+    public void setPatientLastName(String patientLastName) {
+        this.patientLastName = patientLastName;
+    }
 }

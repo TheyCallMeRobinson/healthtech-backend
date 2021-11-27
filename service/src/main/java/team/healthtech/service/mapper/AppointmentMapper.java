@@ -14,6 +14,12 @@ public interface AppointmentMapper {
 
     @Mapping(target = "patientId", source = "patient.id")
     @Mapping(target = "doctorId", source = "timeRecord.doctor.id")
+    @Mapping(target = "doctorFirstName", source = "timeRecord.doctor.firstName")
+    @Mapping(target = "doctorMidName", source = "timeRecord.doctor.midName")
+    @Mapping(target = "doctorLastName", source = "timeRecord.doctor.lastName")
+    @Mapping(target = "patientFirstName", source = "patient.firstName")
+    @Mapping(target = "patientMidName", source = "patient.midName")
+    @Mapping(target = "patientLastName", source = "patient.lastName")
     AppointmentDto fromEntity(AppointmentEntity entity);
 
     @Mapping(target = "patient.id", source = "patientId")

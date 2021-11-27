@@ -9,11 +9,7 @@
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
       <schema-mapping />
     </data-source>
-    <data-source name="postgres@servachok2021.ddns.net" uuid="d911d706-fe75-4af4-9487-9ebd4f12223c">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
-      <schema-mapping />
-    </data-source>
-    <data-source name="postgres@servachok2021.ddns.net [2]" uuid="559e20e9-382d-4f6a-a002-b78c1888f90a">
+    <data-source name="postgres@servachok2021.ddns.net [3]" uuid="da0f2ace-48af-4406-b362-494067d8a267">
       <database-info product="PostgreSQL" version="13.3 (Debian 13.3-1.pgdg100+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="13.3" exact-driver-version="42.2">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
