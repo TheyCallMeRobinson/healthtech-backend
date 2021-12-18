@@ -83,6 +83,9 @@ public class TimeRecordServiceImpl implements TimeRecordService {
 
     @Override
     public TimeRecordDto getTimeRecordByDoctorId(Date date, Integer doctorId) {
+        if (date == null) {
+            date = Date.valueOf(java.time.LocalDate.now());
+        }
         TimeRecordEntity e = repository.getTimeRecordEntityByDateAndDoctorId(date, doctorId);
         TimeRecordDto timeRecordDto = mapper.fromEntity(e);
         timeRecordDto.setDoctorId(doctorId);

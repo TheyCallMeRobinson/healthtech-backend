@@ -9,6 +9,7 @@ import team.healthtech.service.logic.TimeRecordService;
 import team.healthtech.service.model.TimeRecordDto;
 
 import java.sql.Date;
+import java.sql.Time;
 import java.util.List;
 
 @RestController
@@ -29,8 +30,8 @@ public class TimeRecordController {
     }
 
     @Secured({"ROLE_PATIENT", "ROLE_DOCTOR", "ROLE_ADMIN"})
-    @GetMapping()
-    public TimeRecordDto getLastTimeRecordByDoctorId(@RequestBody Date date, @PathVariable int doctorId) {
+    @GetMapping("/{date}")
+    public TimeRecordDto getLastTimeRecordByDoctorId(@PathVariable Date date, @PathVariable int doctorId) {
         return service.getTimeRecordByDoctorId(date, doctorId);
     }
 

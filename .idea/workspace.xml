@@ -4,41 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21ffe208-a334-477f-8846-cec333ff82e3" name="Default Changelist" comment="update security">
+    <list default="true" id="21ffe208-a334-477f-8846-cec333ff82e3" name="Default Changelist" comment="update appointment dto">
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d911d706-fe75-4af4-9487-9ebd4f12223c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d911d706-fe75-4af4-9487-9ebd4f12223c/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d911d706-fe75-4af4-9487-9ebd4f12223c/storage_v2/_src_/database/postgres.edMnLQ/schema/healthtech.8rYqNg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d911d706-fe75-4af4-9487-9ebd4f12223c/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d911d706-fe75-4af4-9487-9ebd4f12223c/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d911d706-fe75-4af4-9487-9ebd4f12223c/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/commons/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commons/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/commons/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons/.gradle/6.8/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/commons/.gradle/6.8/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons/.gradle/6.8/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/commons/.gradle/6.8/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/commons/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/commons/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons/build/libs/commons.jar" beforeDir="false" afterPath="$PROJECT_DIR$/commons/build/libs/commons.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/commons/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/build/libs/db-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/libs/db-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/build/classes/java/main/team/healthtech/rest/api/DoctorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/rest/build/classes/java/main/team/healthtech/rest/api/DoctorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/build/classes/java/main/team/healthtech/rest/api/TimeRecordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/rest/build/classes/java/main/team/healthtech/rest/api/TimeRecordController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest/build/libs/rest-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/rest/build/libs/rest-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rest/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/build/libs/security-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/security/build/libs/security-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/security/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/TimeRecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/TimeRecordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/team/healthtech/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/team/healthtech/security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/logic/impl/TimeRecordServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/logic/impl/TimeRecordServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/mapper/AppointmentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/mapper/AppointmentMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/mapper/AppointmentMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/mapper/AppointmentMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/model/AppointmentDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/model/AppointmentDto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/AdminMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/AdminMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/AllergyMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/AllergyMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/AppointmentMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/AppointmentMapperImpl.java" afterDir="false" />
@@ -52,9 +40,7 @@
       <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/UserMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/security/ProfileMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/security/ProfileMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/build/libs/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/libs/service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/mapper/AppointmentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/mapper/AppointmentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/model/AppointmentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/model/AppointmentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/impl/TimeRecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/impl/TimeRecordServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,14 +287,11 @@
       <workItem from="1637417412370" duration="1159000" />
       <workItem from="1637689817590" duration="31000" />
       <workItem from="1637922339041" duration="3523000" />
-      <workItem from="1638012222724" duration="4515000" />
-    </task>
-    <task id="LOCAL-00023" summary="entities refactor">
-      <created>1627813886545</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1627813886545</updated>
+      <workItem from="1638012222724" duration="9706000" />
+      <workItem from="1638036346197" duration="242000" />
+      <workItem from="1638133287855" duration="90000" />
+      <workItem from="1639752339724" duration="2381000" />
+      <workItem from="1639829527578" duration="3188000" />
     </task>
     <task id="LOCAL-00024" summary="include commons">
       <created>1627813914782</created>
@@ -646,7 +629,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637412178048</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="update appointment dto">
+      <created>1638017061653</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1638017061654</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -729,7 +719,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="doctor service logger implemented" />
     <MESSAGE value="patients-allergies service logger implemented" />
     <MESSAGE value="patients-diseases service logger implemented" />
     <MESSAGE value="patient service logger implemented" />
@@ -754,7 +743,8 @@
     <MESSAGE value="master init commit" />
     <MESSAGE value="master update security" />
     <MESSAGE value="update security" />
-    <option name="LAST_COMMIT_MESSAGE" value="update security" />
+    <MESSAGE value="update appointment dto" />
+    <option name="LAST_COMMIT_MESSAGE" value="update appointment dto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -779,7 +769,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/TimeRecordController.java</url>
-          <line>33</line>
+          <line>34</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

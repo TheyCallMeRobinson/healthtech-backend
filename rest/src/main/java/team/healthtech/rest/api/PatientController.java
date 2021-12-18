@@ -37,6 +37,7 @@ public class PatientController {
         return service.getAllPatients();
     }
 
+    @Secured({"ROLE_PATIENT", "ROLE_ADMIN"})
     @ResponseStatus(HttpStatus.OK)
     @PutMapping("/{patientId}")
     public void updatePatient(
@@ -54,6 +55,7 @@ public class PatientController {
         return service.getPatientById(patientId);
     }
 
+    @Secured({"ROLE_PATIENT", "ROLE_DOCTOR", "ROLE_ADMIN"})
     @ResponseStatus(HttpStatus.OK)
     @GetMapping("/{patientId}/last_appointment")
     public Integer getLastAppointment(
@@ -62,6 +64,7 @@ public class PatientController {
         return service.getLastAppointment(patientId);
     }
 
+    @Secured("ROLE_ADMIN")
     @DeleteMapping("/{patientId}")
     public void deletePatient(
         @PathVariable int patientId
