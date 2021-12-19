@@ -10,16 +10,12 @@ team/healthtech/service/logic/impl/AdminServiceImpl.java
  team.healthtech.service.logic.impl.AdminServiceImpl
 team/healthtech/service/logic/impl/PatientServiceImpl.java
  team.healthtech.service.logic.impl.PatientServiceImpl
-team/healthtech/service/logic/impl/AppointmentServiceImpl.java
- team.healthtech.service.logic.impl.AppointmentServiceImpl
 team/healthtech/service/logic/SpecialityService.java
  team.healthtech.service.logic.SpecialityService
 team/healthtech/service/model/TimeRecordDto.java
  team.healthtech.service.model.TimeRecordDto
 team/healthtech/service/logic/CommentService.java
  team.healthtech.service.logic.CommentService
-team/healthtech/service/mapper/AppointmentMapper.java
- team.healthtech.service.mapper.AppointmentMapper
 team/healthtech/service/validation/EmailUnique.java
  team.healthtech.service.validation.EmailUnique
 team/healthtech/service/mapper/TimeRecordMapper.java
@@ -48,10 +44,10 @@ team/healthtech/service/model/PatientDto.java
  team.healthtech.service.model.PatientDto
 team/healthtech/service/logic/impl/DoctorServiceImpl.java
  team.healthtech.service.logic.impl.DoctorServiceImpl
-team/healthtech/service/model/create_dto/AppointmentCreateDto.java
- team.healthtech.service.model.create_dto.AppointmentCreateDto
 team/healthtech/service/security/HealthtechPasswordEncoder.java
  team.healthtech.service.security.HealthtechPasswordEncoder
+team/healthtech/service/model/create_dto/AppointmentCreateDto.java
+ team.healthtech.service.model.create_dto.AppointmentCreateDto
 team/healthtech/service/model/AdminDto.java
  team.healthtech.service.model.AdminDto
 team/healthtech/service/logic/impl/TimeRecordServiceImpl.java
@@ -66,16 +62,12 @@ team/healthtech/service/logic/AdminService.java
  team.healthtech.service.logic.AdminService
 team/healthtech/service/ServiceConfiguration.java
  team.healthtech.service.ServiceConfiguration
-team/healthtech/service/logic/AppointmentService.java
- team.healthtech.service.logic.AppointmentService
 team/healthtech/service/logic/impl/CommentServiceImpl.java
  team.healthtech.service.logic.impl.CommentServiceImpl
 team/healthtech/service/logic/DoctorService.java
  team.healthtech.service.logic.DoctorService
 team/healthtech/service/logic/impl/PatientDiseasesServiceImpl.java
  team.healthtech.service.logic.impl.PatientDiseasesServiceImpl
-team/healthtech/service/model/AppointmentDto.java
- team.healthtech.service.model.AppointmentDto
 team/healthtech/service/mapper/AdminMapper.java
  team.healthtech.service.mapper.AdminMapper
 team/healthtech/service/model/CommentDto.java
