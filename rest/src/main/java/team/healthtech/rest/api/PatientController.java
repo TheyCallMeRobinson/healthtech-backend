@@ -23,6 +23,7 @@ public class PatientController {
         this.service = service;
     }
 
+    // This is registration! Never change this method!
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public PatientDto createPatient(
@@ -31,6 +32,7 @@ public class PatientController {
         return service.createPatient(patientDto);
     }
 
+    @Secured({"ROLE_ADMIN", "ROLE_DOCTOR", "ROLE_PATIENT"})
     @ResponseStatus(HttpStatus.OK)
     @GetMapping
     public List<PatientDto> getAllPatients() {
@@ -47,6 +49,7 @@ public class PatientController {
         service.updatePatient(patientDto, patientId);
     }
 
+    // This is login! Never change this method!
     @ResponseStatus(HttpStatus.OK)
     @GetMapping("/{patientId}")
     public PatientDto getPatient(

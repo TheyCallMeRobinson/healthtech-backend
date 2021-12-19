@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EntityScan(basePackages = {
     "team.healthtech.db.entity",
     "team.healthtech.db.converter",
-    "tema.healthtech.db.projection"
+    "team.healthtech.db.projection"
 })
 @EnableJpaRepositories(basePackages = "team.healthtech.db.repository")
 @EnableTransactionManagement
