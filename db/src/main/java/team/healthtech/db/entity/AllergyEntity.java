@@ -2,7 +2,7 @@ package team.healthtech.db.entity;
 
 import javax.persistence.*;
 
-@Table(schema = "healthtech", name = "allergies")
+@Table(schema = "ht_fix", name = "allergies")
 @Entity(name = "allergies")
 public class AllergyEntity {
 

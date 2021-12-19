@@ -6,8 +6,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 import team.healthtech.db.entity.AllergyEntity;
-import team.healthtech.db.entity.AppointmentEntity;
-import team.healthtech.db.entity.PatientEntity;
 
 import java.util.List;
 

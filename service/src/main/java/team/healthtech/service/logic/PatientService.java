@@ -1,6 +1,5 @@
 package team.healthtech.service.logic;
 
-import team.healthtech.service.model.AppointmentDto;
 import team.healthtech.service.model.PatientDto;
 import team.healthtech.service.model.create_dto.PatientCreateDto;
 
@@ -14,8 +13,6 @@ public interface PatientService {
     void updatePatient(PatientCreateDto patientDto, int patientId);
 
     PatientDto getPatientById(int patientId);
-
-    Integer getLastAppointment(int patientId);
 
     void deletePatientById(int patientId);
 

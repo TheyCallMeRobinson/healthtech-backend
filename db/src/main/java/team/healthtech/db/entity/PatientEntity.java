@@ -23,7 +23,7 @@ import java.util.List;
         )
     }
 )
-@Table(schema = "healthtech", name = "patients")
+@Table(schema = "ht_fix", name = "patients")
 @Entity(name = "patients")
 public class PatientEntity extends UserEntity {
 

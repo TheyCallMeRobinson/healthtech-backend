@@ -8,14 +8,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 import team.healthtech.common.Role;
 import team.healthtech.db.entity.PatientEntity;
-import team.healthtech.db.repository.AppointmentRepository;
 import team.healthtech.db.repository.PatientRepository;
 import team.healthtech.service.logic.PatientService;
-import team.healthtech.service.mapper.AppointmentMapper;
 import team.healthtech.service.mapper.PatientMapper;
-import team.healthtech.service.model.AppointmentDto;
 import team.healthtech.service.model.PatientDto;
-import team.healthtech.service.model.TimeRecordDto;
 import team.healthtech.service.model.create_dto.PatientCreateDto;
 import team.healthtech.service.security.HealthtechPasswordEncoder;
 import team.healthtech.service.security.Profile;
@@ -35,25 +31,20 @@ public class PatientServiceImpl implements PatientService {
     private final ObjectProvider<Profile> profileProvider;
     private final HealthtechPasswordEncoder passwordEncoder;
     private final PatientRepository patientRepository;
-    private final AppointmentRepository appointmentRepository;
     private final PatientMapper patientMapper;
-    private final AppointmentMapper appointmentMapper;
 
     @Autowired
     public PatientServiceImpl(
         ObjectProvider<Profile> profileProvider,
         HealthtechPasswordEncoder passwordEncoder,
         PatientRepository patientRepository,
-        AppointmentRepository appointmentRepository,
-        PatientMapper patientMapper,
-        AppointmentMapper appointmentMapper
+        //TimeRecordRepository
+        PatientMapper patientMapper
     ) {
         this.profileProvider = profileProvider;
         this.passwordEncoder = passwordEncoder;
         this.patientRepository = patientRepository;
-        this.appointmentRepository = appointmentRepository;
         this.patientMapper = patientMapper;
-        this.appointmentMapper = appointmentMapper;
     }
 
     @Override
@@ -119,14 +110,6 @@ public class PatientServiceImpl implements PatientService {
             patient.setAge(getAgeOfPatient(patient.getId()));
         }
         return patients;
-    }
-
-    @Override
-    public Integer getLastAppointment(int patientId) {
-        return
-            appointmentMapper.fromEntity(
-                appointmentRepository.findFirstByPatientIdOrderByDatetimeDesc(patientId)
-            ).getDoctorId();
     }
 
     private Integer getAgeOfPatient(Integer patientId) {

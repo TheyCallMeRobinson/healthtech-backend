@@ -4,13 +4,52 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21ffe208-a334-477f-8846-cec333ff82e3" name="Default Changelist" comment="update">
+    <list default="true" id="21ffe208-a334-477f-8846-cec333ff82e3" name="Default Changelist" comment="security update">
+      <change afterPath="$PROJECT_DIR$/db/src/main/resources/db/migration/v1/2.0/_changelog-cumulative.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/DatabaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/DatabaseConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/DoctorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/DoctorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/db/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/build/generated/sources/annotationProcessor/java/main/team/healthtech/db/entity/AppointmentEntity_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/AdminEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/AdminEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/AllergyEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/AllergyEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/AppointmentEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/CommentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/CommentEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/DiseaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/DiseaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/DoctorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/DoctorEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/DoctorsSpecialitiesEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/DoctorsSpecialitiesEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/PatientEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/PatientEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/SpecialityEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/SpecialityEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/TimeRecordEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/TimeRecordEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/repository/AllergyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/repository/AllergyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/repository/AppointmentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/resources/db/migration/v1/changelog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/resources/db/migration/v1/changelog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/DoctorAppointmentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/PatientAppointmentController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/PatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/PatientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/AdminMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/AdminMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/AllergyMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/AllergyMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/AppointmentMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/CommentMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/CommentMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/DiseaseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/DiseaseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/DoctorMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/DoctorMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/DoctorSpecialitiesMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/DoctorSpecialitiesMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/PatientMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/PatientMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/SpecialityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/SpecialityMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/TimeRecordMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/TimeRecordMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/UserMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/security/ProfileMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/security/ProfileMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/libs/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/libs/service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/AppointmentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/TimeRecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/TimeRecordService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/impl/AppointmentServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/impl/PatientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/impl/PatientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/impl/TimeRecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/impl/TimeRecordServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/mapper/AllergyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/mapper/AllergyMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/mapper/AppointmentMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/model/AppointmentDto.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +66,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="HealthTech" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -105,15 +149,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.HealthtechApplication">
-    <configuration name="SecurityConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="team.healthtech.SecurityConfig" />
-      <module name="HealthTech.security.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="team.healthtech.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -202,6 +244,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="HealthTech-Team-GitHub [db:newMigration]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="db:newMigration" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="HealthtechApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="HealthTech.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="team.healthtech.HealthtechApplication" />
@@ -211,11 +274,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.HealthTech-Team-GitHub [db:newMigration]" />
         <item itemvalue="Gradle.HealthTech-Team [db:newMigration]" />
         <item itemvalue="Gradle.HealthTech-Team [compileJava]" />
         <item itemvalue="Gradle.HealthTech-Team [dependencies]" />
         <item itemvalue="Gradle.HealthTech-Team [newMigration]" />
-        <item itemvalue="Application.SecurityConfig" />
       </list>
     </recent_temporary>
   </component>
@@ -262,14 +325,7 @@
       <workItem from="1638133287855" duration="90000" />
       <workItem from="1639752339724" duration="2381000" />
       <workItem from="1639829527578" duration="7174000" />
-      <workItem from="1639932102015" duration="2272000" />
-    </task>
-    <task id="LOCAL-00025" summary="security">
-      <created>1627813952331</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1627813952331</updated>
+      <workItem from="1639932102015" duration="14651000" />
     </task>
     <task id="LOCAL-00026" summary="compiler settings">
       <created>1627999832471</created>
@@ -607,7 +663,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639833115918</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="security update">
+      <created>1639934553508</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1639934553509</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -690,7 +753,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="patients-diseases service logger implemented" />
     <MESSAGE value="patient service logger implemented" />
     <MESSAGE value="time record service logger implemented" />
     <MESSAGE value="user service logger implemented" />
@@ -715,7 +777,8 @@
     <MESSAGE value="update security" />
     <MESSAGE value="update appointment dto" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="security update" />
+    <option name="LAST_COMMIT_MESSAGE" value="security update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

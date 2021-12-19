@@ -7,7 +7,7 @@ import javax.persistence.*;
     MappedSuperClass InheritanceStrategy - две аннотации, которые позволяют организовывать наследование, где его по сути нет
     в реляционных бд их нет ни в каком виде, а с точки зрения кода - есть
  */
-@Table(schema = "healthtech", name = "users")
+@Table(schema = "ht_fix", name = "users")
 @Entity(name = "users")
 @Inheritance(strategy = InheritanceType.JOINED)
 public class UserEntity {

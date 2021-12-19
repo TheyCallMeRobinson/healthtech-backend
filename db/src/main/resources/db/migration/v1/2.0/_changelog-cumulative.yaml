@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - preConditions:
+      - dbms:
+          type: postgresql
+  - changeSet:
+      id: PHT-REWORK-202112192044
+      author: PaulRobinson
+      comment: TODO
+      changes:
+        - sqlFile:
+            path: PHT-REWORK-202112192044.sql
+            relativeToChangelogFile: true

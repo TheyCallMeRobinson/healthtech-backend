@@ -3,7 +3,7 @@ package team.healthtech.db.entity;
 import javax.persistence.*;
 import java.time.Instant;
 
-@Table(schema = "healthtech", name = "comments")
+@Table(schema = "ht_fix", name = "comments")
 @Entity(name = "comments")
 public class CommentEntity {
 

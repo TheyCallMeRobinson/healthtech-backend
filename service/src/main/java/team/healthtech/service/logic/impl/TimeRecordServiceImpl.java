@@ -1,6 +1,5 @@
 package team.healthtech.service.logic.impl;
 
-import org.springframework.boot.autoconfigure.cassandra.CassandraProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.ObjectProvider;
@@ -15,13 +14,9 @@ import team.healthtech.service.mapper.TimeRecordMapper;
 import team.healthtech.service.model.TimeRecordDto;
 import team.healthtech.service.security.Profile;
 
-import javax.swing.text.html.Option;
 import java.sql.Date;
-import java.sql.Time;
 import java.util.ArrayList;
 import java.util.List;
-import javax.validation.Valid;
-import java.util.Optional;
 
 @Service
 @Validated

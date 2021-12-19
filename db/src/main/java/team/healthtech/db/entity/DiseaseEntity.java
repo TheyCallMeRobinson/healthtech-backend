@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.sql.Date;
 import java.time.Instant;
 
-@Table(schema = "healthtech", name = "diseases")
+@Table(schema = "ht_fix", name = "diseases")
 @Entity(name = "diseases")
 public class DiseaseEntity {
 

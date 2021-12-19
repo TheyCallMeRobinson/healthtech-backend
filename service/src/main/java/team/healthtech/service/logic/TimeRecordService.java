@@ -1,6 +1,5 @@
 package team.healthtech.service.logic;
 
-import team.healthtech.service.model.AppointmentDto;
 import team.healthtech.service.model.TimeRecordDto;
 
 import java.sql.Date;

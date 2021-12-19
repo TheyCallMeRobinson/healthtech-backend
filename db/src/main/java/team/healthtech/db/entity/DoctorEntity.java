@@ -3,7 +3,7 @@ package team.healthtech.db.entity;
 import javax.persistence.*;
 import java.util.List;
 
-@Table(schema = "healthtech", name = "doctors")
+@Table(schema = "ht_fix", name = "doctors")
 @Entity(name = "doctors")
 public class DoctorEntity extends UserEntity {
 
