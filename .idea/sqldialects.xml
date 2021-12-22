@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/db/src/main/resources/db/migration/v1/2.0/PHT-001-202107241150.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/db/src/main/resources/db/migration/v1/2.0/PHT-002-alter-time_records.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/db/src/main/resources/db/migration/v1/2.0/PHT-007-202107311930.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/db/src/main/resources/db/migration/v1/1.0/PHT-001-202107241150.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/db/src/main/resources/db/migration/v1/1.0/PHT-002-alter-time_records.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/db/src/main/resources/db/migration/v1/1.0/PHT-007-202107311930.sql" dialect="PostgreSQL" />
     <file url="PROJECT" dialect="PostgreSQL" />
   </component>
 </project>
