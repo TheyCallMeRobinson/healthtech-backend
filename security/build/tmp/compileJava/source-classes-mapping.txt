@@ -8,7 +8,7 @@ team/healthtech/security/impl/UserDetailsServiceImpl.java
  team.healthtech.security.impl.UserDetailsServiceImpl
 team/healthtech/security/impl/HealthtechPasswordEncoderImpl.java
  team.healthtech.security.impl.HealthtechPasswordEncoderImpl
-team/healthtech/security/SecurityConfiguration.java
- team.healthtech.security.SecurityConfiguration
 team/healthtech/security/CurrentUserConfiguration.java
  team.healthtech.security.CurrentUserConfiguration
+team/healthtech/security/SecurityConfiguration.java
+ team.healthtech.security.SecurityConfiguration
