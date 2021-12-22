@@ -17,6 +17,8 @@ import team.healthtech.service.security.Profile;
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 @Service
 @Validated
@@ -27,7 +29,6 @@ public class TimeRecordServiceImpl implements TimeRecordService {
     private final TimeRecordsRepository repository;
     private final TimeRecordMapper mapper;
     private final DoctorRepository doctorRepository;
-
     public TimeRecordServiceImpl(
         ObjectProvider<Profile> profileProvider,
         TimeRecordsRepository repository,
@@ -102,4 +103,57 @@ public class TimeRecordServiceImpl implements TimeRecordService {
         return resultList;
     }
 
+    @Override
+    public String getFreeTimeByDoctor(int doctorId) {
+        List<TimeRecordDto> list = mapper.fromEntities(repository.getFreeTimeRecordsOfDoctor(doctorId));
+        Map<Date, List<String>> map = new TreeMap<>();
+        for(var i : list) {
+            map.putIfAbsent(i.getDate(), new ArrayList<>());
+            map.get(i.getDate()).add(i.getStartTime().toString());
+        }
+
+        StringBuilder response = new StringBuilder("[");
+        for (var i : map.keySet()) {
+            response.append("{" + "\"date\":" + '"').append(i.toString()).append('"').append(",");
+            response.append("\"freeTime\":[");
+            for (var j : map.get(i)) {
+                response.append('"').append(j).append('"').append(",");
+            }
+            response.append("]},");
+        }
+        response.append("]");
+        return response.toString();
+    }
+
+    @Override
+    public String getBusyTimeByDoctor(int doctorId) {
+        List<TimeRecordEntity> list = repository.getBusyTimeRecordsOfDoctor(doctorId);
+        Map<Date, List<String>> map = new TreeMap<>();
+        for(var i : list) {
+            map.putIfAbsent(i.getDate(), new ArrayList<>());
+            map.get(i.getDate()).add(i.getStartTime().toString());
+        }
+
+        StringBuilder response = new StringBuilder("[");
+        for (var i : map.keySet()) {
+            response.append("{" + "\"date\":" + '"').append(i.toString()).append('"').append(",");
+            response.append("\"busyTime\":[");
+            for (var j : map.get(i)) {
+                response.append('"').append(j).append('"').append(",");
+            }
+            response.append("]},");
+        }
+        response.append("]");
+        return response.toString();
+    }
+
+    @Override
+    public List<TimeRecordDto> getAllEndedTimeRecordsOfPatient(int patientId) {
+        return mapper.fromEntities(repository.getEndedTimeRecordsByPatientId(patientId));
+    }
+
+    @Override
+    public List<TimeRecordDto> getAllPlannedTimeRecordsOfPatient(int patientId) {
+        return mapper.fromEntities(repository.getPlannedTimeRecordsByPatientId(patientId));
+    }
 }

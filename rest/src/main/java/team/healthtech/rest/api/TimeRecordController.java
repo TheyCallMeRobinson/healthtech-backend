@@ -9,11 +9,10 @@ import team.healthtech.service.logic.TimeRecordService;
 import team.healthtech.service.model.TimeRecordDto;
 
 import java.sql.Date;
-import java.sql.Time;
 import java.util.List;
 
 @RestController
-@RequestMapping("doctors/{doctorId}/timerecord")
+@RequestMapping("/timerecord")
 public class TimeRecordController {
     private final TimeRecordService service;
 
@@ -30,7 +29,7 @@ public class TimeRecordController {
     }
 
     @Secured({"ROLE_PATIENT", "ROLE_DOCTOR", "ROLE_ADMIN"})
-    @GetMapping("/{date}")
+    @GetMapping("/doctor/{doctorId}/date/{date}")
     public TimeRecordDto getLastTimeRecordByDoctorId(@PathVariable Date date, @PathVariable int doctorId) {
         return service.getTimeRecordByDoctorId(date, doctorId);
     }
@@ -54,4 +53,23 @@ public class TimeRecordController {
         service.deleteTimeRecord(timeRecordId);
     }
 
+    @GetMapping("/doctor/{doctorId}/free")
+    public String getDoctorFreeTimeByDoctor(@PathVariable int doctorId) {
+        return service.getFreeTimeByDoctor(doctorId);
+    }
+
+    @GetMapping("/doctor/{doctorId}/busy")
+    public String getDoctorBusyTimeByDoctor(@PathVariable int doctorId) {
+        return service.getBusyTimeByDoctor(doctorId);
+    }
+
+    @GetMapping("/{patientId}/ended")
+    public List<TimeRecordDto> getAllEndedTimeRecordsOfPatient(@PathVariable int patientId) {
+        return service.getAllEndedTimeRecordsOfPatient(patientId);
+    }
+
+    @GetMapping("/{patientId}/planned")
+    public List<TimeRecordDto> getAllPlannedTimeRecordsOfPatient(@PathVariable int patientId) {
+        return service.getAllPlannedTimeRecordsOfPatient(patientId);
+    }
 }

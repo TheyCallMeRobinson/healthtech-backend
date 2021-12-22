@@ -14,10 +14,16 @@ public class TimeRecordEntity {
     @Column(name = "id")
     private Integer id;
 
-    @Column(name = "doctor_id")
+    @ManyToOne
+    @JoinColumn(
+        name = "doctor_id",
+        referencedColumnName = "id")
     private DoctorEntity doctor;
 
-    @Column(name = "patient_id")
+    @ManyToOne
+    @JoinColumn(
+        name = "patient_id",
+        referencedColumnName = "id")
     private PatientEntity patient;
 
     @Column(name = "date")
@@ -25,9 +31,6 @@ public class TimeRecordEntity {
 
     @Column(name = "start_time")
     private Time startTime;
-
-    @Column(name = "end_time")
-    private Time endTime;
 
     @Column(name = "result")
     private String result;
@@ -73,14 +76,6 @@ public class TimeRecordEntity {
 
     public void setStartTime(Time startTime) {
         this.startTime = startTime;
-    }
-
-    public Time getEndTime() {
-        return endTime;
-    }
-
-    public void setEndTime(Time endTime) {
-        this.endTime = endTime;
     }
 
     public String getResult() {

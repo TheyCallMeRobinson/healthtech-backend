@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21ffe208-a334-477f-8846-cec333ff82e3" name="Default Changelist" comment="change db scheme, make appointments fix">
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/AllergyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/AllergyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/impl/AllergyServiceImpl.java" afterDir="false" />
+    <list default="true" id="21ffe208-a334-477f-8846-cec333ff82e3" name="Default Changelist" comment="allergies controller added">
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
@@ -20,41 +17,56 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/commons/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/commons/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/commons/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/DatabaseConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/DatabaseConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/AdminEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/AdminEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/AllergyEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/AllergyEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/AppointmentEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/AppointmentEntity_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/CommentEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/CommentEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/DiseaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/DiseaseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/DoctorEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/DoctorEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/DoctorsSpecialitiesEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/DoctorsSpecialitiesEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/PatientEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/PatientEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/SpecialityEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/SpecialityEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/TimeRecordEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/TimeRecordEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/UserEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/repository/AppointmentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/TimeRecordEntity_.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/entity/TimeRecordEntity_.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/repository/TimeRecordsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/classes/java/main/team/healthtech/db/repository/TimeRecordsRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/build/generated/sources/annotationProcessor/java/main/team/healthtech/db/entity/CommentEntity_.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/generated/sources/annotationProcessor/java/main/team/healthtech/db/entity/CommentEntity_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/build/generated/sources/annotationProcessor/java/main/team/healthtech/db/entity/TimeRecordEntity_.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/generated/sources/annotationProcessor/java/main/team/healthtech/db/entity/TimeRecordEntity_.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/build/libs/db-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/libs/db-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/build/resources/main/db/migration/v1/changelog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/resources/main/db/migration/v1/changelog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/build/classes/java/main/team/healthtech/rest/api/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/rest/build/classes/java/main/team/healthtech/rest/api/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/build/classes/java/main/team/healthtech/rest/api/DoctorAppointmentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/build/classes/java/main/team/healthtech/rest/api/DoctorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/rest/build/classes/java/main/team/healthtech/rest/api/DoctorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/build/classes/java/main/team/healthtech/rest/api/PatientAppointmentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/build/classes/java/main/team/healthtech/rest/api/PatientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/rest/build/classes/java/main/team/healthtech/rest/api/PatientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/db/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/CommentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/CommentEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/TimeRecordEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/entity/TimeRecordEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/repository/CommentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/repository/TimeRecordsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/team/healthtech/db/repository/TimeRecordsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/resources/db/migration/v1/2.0/_changelog-cumulative.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/resources/db/migration/v1/2.0/_changelog-cumulative.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/build/classes/java/main/team/healthtech/rest/api/CommentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/rest/build/classes/java/main/team/healthtech/rest/api/CommentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/build/classes/java/main/team/healthtech/rest/api/TimeRecordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/rest/build/classes/java/main/team/healthtech/rest/api/TimeRecordController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest/build/libs/rest-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/rest/build/libs/rest-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rest/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/DoctorSpecialitiesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/DoctorSpecialitiesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/TimeRecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/TimeRecordController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/build/classes/java/main/team/healthtech/security/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/security/build/classes/java/main/team/healthtech/security/SecurityConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/build/libs/security-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/security/build/libs/security-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/security/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/logic/AppointmentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/logic/PatientService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/logic/PatientService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/logic/impl/AppointmentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/logic/impl/PatientServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/logic/impl/PatientServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/mapper/AppointmentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/mapper/AppointmentMapperImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/model/AppointmentDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/src/main/java/team/healthtech/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/security/src/main/java/team/healthtech/security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/logic/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/logic/CommentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/logic/TimeRecordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/logic/TimeRecordService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/logic/impl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/logic/impl/CommentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/logic/impl/TimeRecordServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/logic/impl/TimeRecordServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/mapper/CommentMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/mapper/CommentMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/mapper/TimeRecordMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/mapper/TimeRecordMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/mapper/TimeRecordMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/mapper/TimeRecordMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/model/CommentDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/model/CommentDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/model/TimeRecordDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/classes/java/main/team/healthtech/service/model/TimeRecordDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/AdminMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/AdminMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/AllergyMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/AllergyMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/CommentMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/CommentMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/DiseaseMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/DiseaseMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/DoctorMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/DoctorMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/DoctorSpecialitiesMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/DoctorSpecialitiesMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/PatientMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/PatientMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/SpecialityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/SpecialityMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/TimeRecordMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/TimeRecordMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/mapper/UserMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/security/ProfileMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/generated/sources/annotationProcessor/java/main/team/healthtech/service/security/ProfileMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/build/libs/service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/libs/service-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/service/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/CommentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/TimeRecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/TimeRecordService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/impl/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/impl/TimeRecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/impl/TimeRecordServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/mapper/TimeRecordMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/mapper/TimeRecordMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/model/CommentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/model/CommentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/model/TimeRecordDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/team/healthtech/service/model/TimeRecordDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,17 +166,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.HealthtechApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HealthTech-Team [compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -330,14 +331,8 @@
       <workItem from="1638133287855" duration="90000" />
       <workItem from="1639752339724" duration="2381000" />
       <workItem from="1639829527578" duration="7174000" />
-      <workItem from="1639932102015" duration="15690000" />
-    </task>
-    <task id="LOCAL-00027" summary="Doctor mapper and simple doctor service implemented">
-      <created>1628002607313</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1628002607313</updated>
+      <workItem from="1639932102015" duration="29253000" />
+      <workItem from="1640183385111" duration="11176000" />
     </task>
     <task id="LOCAL-00028" summary="doctor controller">
       <created>1628002639785</created>
@@ -675,7 +670,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639947164003</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="allergies controller added">
+      <created>1639948102786</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1639948102786</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -758,7 +760,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="time record service logger implemented" />
     <MESSAGE value="user service logger implemented" />
     <MESSAGE value="http responses and access filters implemented" />
     <MESSAGE value="remote database connection" />
@@ -783,16 +784,17 @@
     <MESSAGE value="update" />
     <MESSAGE value="security update" />
     <MESSAGE value="change db scheme, make appointments fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="change db scheme, make appointments fix" />
+    <MESSAGE value="allergies controller added" />
+    <option name="LAST_COMMIT_MESSAGE" value="allergies controller added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
+        <breakpoint type="java-exception">
           <properties class="org.hibernate.MappingException" package="org.hibernate" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <breakpoint enabled="true" type="java-exception">
+        <breakpoint type="java-exception">
           <properties class="javax.persistence.PersistenceException" package="javax.persistence" />
           <option name="timeStamp" value="2" />
         </breakpoint>
@@ -808,13 +810,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rest/src/main/java/team/healthtech/rest/api/TimeRecordController.java</url>
-          <line>34</line>
+          <line>33</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/impl/DoctorSpecialitiesServiceImpl.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="24" />
+          <url>file://$PROJECT_DIR$/service/src/main/java/team/healthtech/service/logic/impl/TimeRecordServiceImpl.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

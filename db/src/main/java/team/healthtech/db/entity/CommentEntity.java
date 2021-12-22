@@ -1,6 +1,7 @@
 package team.healthtech.db.entity;
 
 import javax.persistence.*;
+import java.sql.Date;
 import java.time.Instant;
 
 @Table(schema = "ht_fix", name = "comments")
@@ -27,7 +28,7 @@ public class CommentEntity {
     private PatientEntity patient;
 
     @Column(name = "date")
-    private Instant date;
+    private Date date;
 
     @Column(name = "mark")
     private Integer mark;
@@ -59,11 +60,11 @@ public class CommentEntity {
         this.patient = patient;
     }
 
-    public Instant getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(Instant date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 

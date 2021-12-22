@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.validation.constraints.Future;
 import javax.validation.constraints.NotBlank;
+import java.sql.Date;
 import java.time.Instant;
 
 public class CommentDto {
@@ -20,7 +21,7 @@ public class CommentDto {
 
     @NotBlank(message = "date.is-null")
     @Future(message = "date.invalid")
-    private Instant date;
+    private Date date;
 
     public Integer getDoctorId() {
         return doctorId;
@@ -54,11 +55,11 @@ public class CommentDto {
         this.comment = comment;
     }
 
-    public Instant getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(Instant date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 

@@ -10,3 +10,21 @@ databaseChangeLog:
         - sqlFile:
             path: PHT-REWORK-202112192044.sql
             relativeToChangelogFile: true
+
+  - changeSet:
+      id: PHT-REWORK-202112200304
+      author: PaulRobinson
+      comment: TODO
+      changes:
+        - sqlFile:
+            path: PHT-REWORK-202112200304.sql
+            relativeToChangelogFile: true
+
+  - changeSet:
+      id: PHT-REWORK-202112221912
+      author: PaulRobinson
+      comment: TODO
+      changes:
+        - sqlFile:
+            path: PHT-REWORK-202112221912.sql
+            relativeToChangelogFile: true

@@ -13,13 +13,20 @@ public class TimeRecordDto {
     @JsonProperty("doctor_id")
     private Integer doctorId;
 
+    @JsonProperty("patient_id")
+    private Integer patientId;
+
+    @JsonProperty("date")
     private Date date;
 
     @JsonProperty("start_time")
     private Time startTime;
 
-    @JsonProperty("end_time")
-    private Time endTime;
+    @JsonProperty("result")
+    private String result;
+
+    @JsonProperty("recipe")
+    private String recipe;
 
     public Integer getId() {
         return id;
@@ -53,12 +60,27 @@ public class TimeRecordDto {
         this.startTime = startTime;
     }
 
-    public Time getEndTime() {
-        return endTime;
+    public Integer getPatientId() {
+        return patientId;
     }
 
-    public void setEndTime(Time endTime) {
-        this.endTime = endTime;
+    public void setPatientId(Integer patientId) {
+        this.patientId = patientId;
     }
 
+    public String getResult() {
+        return result;
+    }
+
+    public void setResult(String result) {
+        this.result = result;
+    }
+
+    public String getRecipe() {
+        return recipe;
+    }
+
+    public void setRecipe(String recipe) {
+        this.recipe = recipe;
+    }
 }

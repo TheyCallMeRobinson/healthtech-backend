@@ -15,7 +15,7 @@ import team.healthtech.service.model.CommentDto;
 import team.healthtech.service.security.Profile;
 
 import javax.validation.Valid;
-import java.time.Instant;
+import java.sql.Date;
 import java.util.List;
 
 @Service
@@ -42,7 +42,7 @@ public class CommentServiceImpl implements CommentService {
     public CommentDto createComment(@Valid CommentCreateDto commentCreateDto, Integer doctorId) {
         logger.info("New comment create request by {}", profileProvider.getIfAvailable());
         CommentEntity commentEntity = commentMapper.toEntity(commentCreateDto, doctorId);
-        Instant datetime = Instant.now();
+        Date datetime = new Date(System.currentTimeMillis());
         commentEntity.setDate(datetime);
         return
             commentMapper.fromEntity(
@@ -53,6 +53,11 @@ public class CommentServiceImpl implements CommentService {
     public List<CommentDto> getAllCommentsByDoctorId(Integer doctorId) {
         logger.info("Comments list get for doctor with id {} request by {}", doctorId, profileProvider.getIfAvailable());
         return commentMapper.fromEntities(commentRepository.getAllByDoctorId(doctorId));
+    }
+
+    @Override
+    public List<CommentDto> getAllCommentsByDateAndPatientId(Integer patientId, Date date) {
+        return commentMapper.fromEntities(commentRepository.getAllByPatientIdAndDate(patientId, date));
     }
 
 }

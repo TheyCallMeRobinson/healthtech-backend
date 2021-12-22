@@ -9,7 +9,7 @@ import team.healthtech.service.model.TimeRecordDto;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-12-19T22:23:00+0300",
+    date = "2021-12-22T21:19:30+0300",
     comments = "version: 1.4.2.Final, compiler: IncrementalProcessingEnvironment from gradle-language-java-6.8.jar, environment: Java 11.0.11 (Amazon.com Inc.)"
 )
 @Component
@@ -26,7 +26,8 @@ public class TimeRecordMapperImpl implements TimeRecordMapper {
         timeRecordDto.setId( entity.getId() );
         timeRecordDto.setDate( entity.getDate() );
         timeRecordDto.setStartTime( entity.getStartTime() );
-        timeRecordDto.setEndTime( entity.getEndTime() );
+        timeRecordDto.setResult( entity.getResult() );
+        timeRecordDto.setRecipe( entity.getRecipe() );
 
         return timeRecordDto;
     }
@@ -42,7 +43,8 @@ public class TimeRecordMapperImpl implements TimeRecordMapper {
         timeRecordEntity.setId( dto.getId() );
         timeRecordEntity.setDate( dto.getDate() );
         timeRecordEntity.setStartTime( dto.getStartTime() );
-        timeRecordEntity.setEndTime( dto.getEndTime() );
+        timeRecordEntity.setResult( dto.getResult() );
+        timeRecordEntity.setRecipe( dto.getRecipe() );
 
         return timeRecordEntity;
     }
@@ -68,6 +70,7 @@ public class TimeRecordMapperImpl implements TimeRecordMapper {
         }
 
         entity.setStartTime( dto.getStartTime() );
-        entity.setEndTime( dto.getEndTime() );
+        entity.setResult( dto.getResult() );
+        entity.setRecipe( dto.getRecipe() );
     }
 }

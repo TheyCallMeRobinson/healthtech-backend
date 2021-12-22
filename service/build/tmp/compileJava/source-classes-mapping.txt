@@ -4,6 +4,8 @@ team/healthtech/service/model/create_dto/AdminCreateDto.java
  team.healthtech.service.model.create_dto.AdminCreateDto
 team/healthtech/service/model/DoctorSpecialitiesDto.java
  team.healthtech.service.model.DoctorSpecialitiesDto
+team/healthtech/service/logic/impl/AllergyServiceImpl.java
+ team.healthtech.service.logic.impl.AllergyServiceImpl
 team/healthtech/service/mapper/DoctorSpecialitiesMapper.java
  team.healthtech.service.mapper.DoctorSpecialitiesMapper
 team/healthtech/service/logic/impl/AdminServiceImpl.java
@@ -64,6 +66,8 @@ team/healthtech/service/ServiceConfiguration.java
  team.healthtech.service.ServiceConfiguration
 team/healthtech/service/logic/impl/CommentServiceImpl.java
  team.healthtech.service.logic.impl.CommentServiceImpl
+team/healthtech/service/logic/AllergyService.java
+ team.healthtech.service.logic.AllergyService
 team/healthtech/service/logic/DoctorService.java
  team.healthtech.service.logic.DoctorService
 team/healthtech/service/logic/impl/PatientDiseasesServiceImpl.java
