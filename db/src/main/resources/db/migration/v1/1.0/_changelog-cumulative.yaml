@@ -3,161 +3,28 @@ databaseChangeLog:
       - dbms:
           type: postgresql
   - changeSet:
-      id: PHT-001-202107241150
+      id: PHT-REWORK-202112192044
       author: PaulRobinson
-      comment: Create Initial DB Structure
-      # runOnChange: true
-      changes:
-        - sqlFile:
-            path: PHT-001-202107241150.sql
-            relativeToChangelogFile: true
-  - changeSet:
-      id: PHT-002-alter-time_records
-      author: PaulRobinson
-      comment: id INTEGER -> id SERIAL
-      # runOnChange: true
-      changes:
-        - sqlFile:
-            path: PHT-002-alter-time_records.sql
-            relativeToChangelogFile: true
-  - changeSet:
-      id: PHT-003-202107281206
-      author: EkaterinaSelivanova
-      comment: Rename column data into date in table comments
-      changes:
-        - sqlFile:
-            path: PHT-003-202107281206.sql
-            relativeToChangelogFile: true
-  - changeSet:
-      id: PHT-003-202107281212
-      author: EkaterinaSelivanova
-      comment: Change type of column date in table comments (DATE -> TIMESTAMP) and set default expression
-      changes:
-        - sqlFile:
-            path: PHT-003-202107281212.sql
-            relativeToChangelogFile: true
-  - changeSet:
-      id: PHT-003-202107281239
-      author: EkaterinaSelivanova
-      comment: Change type of column date in table appointments (DATE -> TIMESTAMP) and set default expression
-      changes:
-        - sqlFile:
-            path: PHT-003-202107281239.sql
-            relativeToChangelogFile: true
-  - changeSet:
-      id: PHT-003-202107281412
-      author: EkaterinaSelivanova
-      comment: Add columns to table appointments
-      changes:
-        - sqlFile:
-            path: PHT-003-202107281412.sql
-            relativeToChangelogFile: true
-  - changeSet:
-      id: PHT-004-202107282000
-      author: EV_Obukhova
-      comment: add phonenumber and email to table patients
-      changes:
-        - sqlFile:
-            path: PHT-004-202107282000.sql
-            relativeToChangelogFile: true
-  - changeSet:
-      id: PHT-005-rename-column
-      author: PaulRobinson
-      comment: rename column in patients (user_id_ptr -> id)
-      changes:
-        - sqlFile:
-            path: PHT-005-rename-column.sql
-            relativeToChangelogFile: true
-  - changeSet:
-      id: PHT-006-rename-column
-      author: PaulRobinson
-      comment: rename column in doctors (user_id_ptr -> id)
-      changes:
-        - sqlFile:
-            path: PHT-006-rename-column.sql
-            relativeToChangelogFile: true
-  - changeSet:
-      id: PHT-007-20210729173033
-      author: TODO
       comment: TODO
       changes:
         - sqlFile:
-            path: PHT-007-20210729173033.sql
-            relativeToChangelogFile: true
-  - changeSet:
-      id: PHT-007-20210731230215
-      author: TODO
-      comment: TODO
-      changes:
-        - sqlFile:
-            path: PHT-007-20210731230215.sql
-            relativeToChangelogFile: true
-  - changeSet:
-      id: PHT-007-20210803143400
-      author: EkaterinaSelivanova
-      comment: Rollback file
-      changes:
-        - sqlFile:
-            path: PHT-007-20210803143400.sql
-            relativeToChangelogFile: true
-  - changeSet:
-      id: PHT-007-20210805124509
-      author: EkaterinaSelivanova
-      comment: TODO
-      changes:
-        - sqlFile:
-            path: PHT-007-20210805124509.sql
-            relativeToChangelogFile: true
-  - changeSet:
-      id: PHT-008-202108061405
-      author: ObukhovaEV
-      comment: Make patient_id in table diseases not null
-      changes:
-        - sqlFile:
-            path: PHT-008-202108061405.sql
-            relativeToChangelogFile: true
-  - changeSet:
-      id: PHT-009-202108071933
-      author: ObukhovaEV
-      comment: Make id in table time_records serial instead of integer
-      changes:
-        - sqlFile:
-            path: PHT-009-202108071933.sql
+            path: PHT-REWORK-202112192044.sql
             relativeToChangelogFile: true
 
   - changeSet:
-      id: PHT-007-20210808220438
-      author: EkaterinaSelivanova
-      comment: TODO
-      changes:
-        - sqlFile:
-            path: PHT-007-20210808220438.sql
-            relativeToChangelogFile: true
-
-  - changeSet:
-      id: PHT-007-20210808172439
-      author: PaulRobinson
-      comment: drop column rating in doctor
-      changes:
-        - sqlFile:
-            path: PHT-007-20210808172439.sql
-            relativeToChangelogFile: true
-
-  - changeSet:
-      id: PHT-009-20210808195802
+      id: PHT-REWORK-202112200304
       author: PaulRobinson
       comment: TODO
       changes:
         - sqlFile:
-            path: PHT-009-20210808195802.sql
+            path: PHT-REWORK-202112200304.sql
             relativeToChangelogFile: true
 
   - changeSet:
-      id: PHT-REWORK-202112230123
+      id: PHT-REWORK-202112221912
       author: PaulRobinson
       comment: TODO
       changes:
         - sqlFile:
-            path: PHT-REWORK-202112230123.sql
+            path: PHT-REWORK-202112221912.sql
             relativeToChangelogFile: true
-
