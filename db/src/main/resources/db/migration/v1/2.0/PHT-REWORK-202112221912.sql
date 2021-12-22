@@ -1,2 +1,2 @@
-alter table healthtech.comments
+alter table healthtech_fix.comments
     alter column date type date;
