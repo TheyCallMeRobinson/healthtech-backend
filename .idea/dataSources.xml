@@ -29,5 +29,12 @@
       <jdbc-url>jdbc:postgresql://192.168.0.16:5432/postgres</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="vita_healthtech@servachok2021.ddns.net" uuid="d7f87408-9a2e-4683-9902-9ae6f400e12b">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://servachok2021.ddns.net:5432/vita_healthtech</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

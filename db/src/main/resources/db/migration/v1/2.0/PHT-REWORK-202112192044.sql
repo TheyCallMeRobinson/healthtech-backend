@@ -1,6 +1,6 @@
---create schema healthtech;
+create schema healthtech;
 
-CREATE TABLE healthtech.roles
+create table healthtech.roles
 (
     role_id integer primary key,
     name    varchar(30) unique
@@ -127,9 +127,9 @@ create table healthtech.patients_allergies
             references healthtech.allergies
 );
 
-create table time_records
+create table healthtech.time_records
 (
-    id         integer default nextval('timetables_id_seq'::regclass) not null
+    id         serial not null
         constraint time_records_pkey
             primary key,
     doctor_id  integer not null
