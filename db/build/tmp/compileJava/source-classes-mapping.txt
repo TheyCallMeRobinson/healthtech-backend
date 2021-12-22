@@ -1,7 +1,7 @@
 team/healthtech/db/repository/DoctorRepository.java
  team.healthtech.db.repository.DoctorRepository
-team/healthtech/db/entity/CommentEntity.java
- team.healthtech.db.entity.CommentEntity
+team/healthtech/db/DatabaseConfiguration.java
+ team.healthtech.db.DatabaseConfiguration
 team/healthtech/db/repository/SpecialityRepository.java
  team.healthtech.db.repository.SpecialityRepository
 team/healthtech/db/repository/AdminRepository.java
@@ -18,10 +18,10 @@ team/healthtech/db/entity/DoctorSpecialityId.java
  team.healthtech.db.entity.DoctorSpecialityId
 team/healthtech/db/entity/DoctorsSpecialitiesEntity.java
  team.healthtech.db.entity.DoctorsSpecialitiesEntity
-team/healthtech/db/repository/CommentRepository.java
- team.healthtech.db.repository.CommentRepository
-team/healthtech/db/entity/AdminEntity.java
- team.healthtech.db.entity.AdminEntity
+team/healthtech/db/entity/CommentEntity.java
+ team.healthtech.db.entity.CommentEntity
+team/healthtech/db/entity/TimeRecordEntity.java
+ team.healthtech.db.entity.TimeRecordEntity
 team/healthtech/db/repository/UserRepository.java
  team.healthtech.db.repository.UserRepository
 team/healthtech/db/repository/AllergyRepository.java
@@ -30,21 +30,21 @@ team/healthtech/db/provider/impl/UserSecurityProviderImpl.java
  team.healthtech.db.provider.impl.UserSecurityProviderImpl
 team/healthtech/db/entity/PatientEntity.java
  team.healthtech.db.entity.PatientEntity
-team/healthtech/db/entity/DiseaseEntity.java
- team.healthtech.db.entity.DiseaseEntity
+team/healthtech/db/repository/TimeRecordsRepository.java
+ team.healthtech.db.repository.TimeRecordsRepository
 team/healthtech/db/entity/SpecialityEntity.java
  team.healthtech.db.entity.SpecialityEntity
 team/healthtech/db/entity/UserEntity.java
  team.healthtech.db.entity.UserEntity
 team/healthtech/db/provider/UserSecurityProvider.java
  team.healthtech.db.provider.UserSecurityProvider
-team/healthtech/db/DatabaseConfiguration.java
- team.healthtech.db.DatabaseConfiguration
 team/healthtech/db/entity/AllergyEntity.java
  team.healthtech.db.entity.AllergyEntity
 team/healthtech/db/entity/DoctorEntity.java
  team.healthtech.db.entity.DoctorEntity
-team/healthtech/db/entity/TimeRecordEntity.java
- team.healthtech.db.entity.TimeRecordEntity
-team/healthtech/db/repository/TimeRecordsRepository.java
- team.healthtech.db.repository.TimeRecordsRepository
+team/healthtech/db/repository/CommentRepository.java
+ team.healthtech.db.repository.CommentRepository
+team/healthtech/db/entity/AdminEntity.java
+ team.healthtech.db.entity.AdminEntity
+team/healthtech/db/entity/DiseaseEntity.java
+ team.healthtech.db.entity.DiseaseEntity

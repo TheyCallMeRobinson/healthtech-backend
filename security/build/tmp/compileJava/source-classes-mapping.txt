@@ -2,13 +2,13 @@ team/healthtech/security/handler/HealthtechFailureHandler.java
  team.healthtech.security.handler.HealthtechFailureHandler
 team/healthtech/security/handler/HealthtechAccessDeniedHandler.java
  team.healthtech.security.handler.HealthtechAccessDeniedHandler
-team/healthtech/security/handler/HealthtechSuccessHandler.java
- team.healthtech.security.handler.HealthtechSuccessHandler
-team/healthtech/security/impl/UserDetailsServiceImpl.java
- team.healthtech.security.impl.UserDetailsServiceImpl
 team/healthtech/security/impl/HealthtechPasswordEncoderImpl.java
  team.healthtech.security.impl.HealthtechPasswordEncoderImpl
 team/healthtech/security/CurrentUserConfiguration.java
  team.healthtech.security.CurrentUserConfiguration
+team/healthtech/security/handler/HealthtechSuccessHandler.java
+ team.healthtech.security.handler.HealthtechSuccessHandler
+team/healthtech/security/impl/UserDetailsServiceImpl.java
+ team.healthtech.security.impl.UserDetailsServiceImpl
 team/healthtech/security/SecurityConfiguration.java
  team.healthtech.security.SecurityConfiguration

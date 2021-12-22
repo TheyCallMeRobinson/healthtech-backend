@@ -5,7 +5,7 @@ import java.sql.Date;
 import java.sql.Time;
 import java.time.Instant;
 
-@Table(schema = "ht_fix", name = "time_records")
+@Table(schema = "healthtech", name = "time_records")
 @Entity(name = "time_records")
 public class TimeRecordEntity {
 

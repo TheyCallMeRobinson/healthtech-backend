@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.sql.Date;
 import java.time.Instant;
 
-@Table(schema = "ht_fix", name = "comments")
+@Table(schema = "healthtech", name = "comments")
 @Entity(name = "comments")
 public class CommentEntity {
 
