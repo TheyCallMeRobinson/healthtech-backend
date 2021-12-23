@@ -16,10 +16,12 @@ services:
     depends_on:
       - postgres
     environment:
-      spring.datasource.url: jdbc:postgresql://192.168.0.16:5432/vita_healthtech
+      spring.datasource.url: jdbc:postgresql://ec2-34-247-249-224.eu-west-1.compute.amazonaws.com:5432/d8gsjss66jiqun
       # spring.datasource.url: jdbc:postgresql://192.168.0.16:35432/postgres
-      spring.datasource.password: password
-      spring.datasource.username: postgres
+      #spring.datasource.password: password
+      #spring.datasource.username: postgres
+      spring.datasource.password: 1accb488fcaffc96c420ac4e80c744591235c62a1f8de1ee68d673c8077b4840
+      spring.datasource.username: kvfgmyfcwkdbxv
     links:
       - postgres
     ports:

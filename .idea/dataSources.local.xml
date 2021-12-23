@@ -36,7 +36,7 @@
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
       <schema-mapping />
     </data-source>
-    <data-source name="hell@servachok2021.ddns.net" uuid="bcb87d2d-d975-4d60-adad-16a51395cc9c">
+    <data-source name="help_me@servachok2021.ddns.net" uuid="b2f540ca-71de-4b47-8058-af219759362d">
       <database-info product="PostgreSQL" version="12.9 (Ubuntu 12.9-0ubuntu0.20.04.1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="12.9" exact-driver-version="42.2">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
@@ -49,12 +49,21 @@
             <node kind="database" qname="@">
               <node kind="schema" qname="@" />
             </node>
-            <node kind="database" qname="hell">
+            <node kind="database" qname="help_me">
               <node kind="schema" qname="healthtech" />
             </node>
           </node>
         </introspection-scope>
       </schema-mapping>
+    </data-source>
+    <data-source name="heroku_healthtech" uuid="824047c2-6cb3-4076-a067-0f7344ed6a8e">
+      <database-info product="PostgreSQL" version="13.5 (Ubuntu 13.5-2.pgdg20.04+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="13.5">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>kvfgmyfcwkdbxv</user-name>
+      <schema-mapping />
     </data-source>
   </component>
 </project>
