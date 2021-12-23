@@ -36,7 +36,7 @@
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
       <schema-mapping />
     </data-source>
-    <data-source name="vita_healthtech@servachok2021.ddns.net" uuid="d7f87408-9a2e-4683-9902-9ae6f400e12b">
+    <data-source name="hell@servachok2021.ddns.net" uuid="bcb87d2d-d975-4d60-adad-16a51395cc9c">
       <database-info product="PostgreSQL" version="12.9 (Ubuntu 12.9-0ubuntu0.20.04.1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="12.9" exact-driver-version="42.2">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
@@ -49,7 +49,7 @@
             <node kind="database" qname="@">
               <node kind="schema" qname="@" />
             </node>
-            <node kind="database" qname="vita_healthtech">
+            <node kind="database" qname="hell">
               <node kind="schema" qname="healthtech" />
             </node>
           </node>
