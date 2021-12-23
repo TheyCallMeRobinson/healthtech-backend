@@ -4,10 +4,10 @@ spring:
   banner:
     location: classpath:banner.txt
   datasource:
-    url: jdbc:postgresql://servachok2021.ddns.net:5432/vita_healthtech
+    url: jdbc:postgresql://ec2-34-247-249-224.eu-west-1.compute.amazonaws.com:5432/d8gsjss66jiqun
     # url: jdbc:postgresql://servachok2021.ddns.net:35432/postgres
-    username: postgres
-    password: password
+    username: kvfgmyfcwkdbxv
+    password: 1accb488fcaffc96c420ac4e80c744591235c62a1f8de1ee68d673c8077b4840
   jpa:
     open-in-view: on
     hibernate:

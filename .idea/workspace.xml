@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21ffe208-a334-477f-8846-cec333ff82e3" name="Default Changelist" comment="fix catalogs">
+    <list default="true" id="21ffe208-a334-477f-8846-cec333ff82e3" name="Default Changelist" comment="move to heroku db">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/commons/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,14 +292,7 @@
       <workItem from="1639829527578" duration="7174000" />
       <workItem from="1639932102015" duration="2272000" />
       <workItem from="1640258185119" duration="3406000" />
-      <workItem from="1640282557222" duration="1878000" />
-    </task>
-    <task id="LOCAL-00032" summary="patient validation improved">
-      <created>1628029192482</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1628029192482</updated>
+      <workItem from="1640282557222" duration="7440000" />
     </task>
     <task id="LOCAL-00033" summary="doctor create validation added">
       <created>1628030218134</created>
@@ -632,7 +630,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640283181148</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="move to heroku db">
+      <created>1640284657953</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1640284657953</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -715,7 +720,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="user service logger implemented" />
     <MESSAGE value="http responses and access filters implemented" />
     <MESSAGE value="remote database connection" />
     <MESSAGE value="origin/database merge with origin/obukhova_e_v" />
@@ -740,7 +744,8 @@
     <MESSAGE value="create new database and move into it" />
     <MESSAGE value="fix port" />
     <MESSAGE value="fix catalogs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix catalogs" />
+    <MESSAGE value="move to heroku db" />
+    <option name="LAST_COMMIT_MESSAGE" value="move to heroku db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

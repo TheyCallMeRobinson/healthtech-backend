@@ -8,13 +8,6 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="postgres@127.0.0.1" uuid="66d8c08c-6228-41a6-ad2e-cd17315ba4eb">
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1:35432/postgres</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
     <data-source source="LOCAL" name="postgres@servachok2021.ddns.net [3]" uuid="da0f2ace-48af-4406-b362-494067d8a267">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
