@@ -78,7 +78,7 @@ public class PatientServiceImpl implements PatientService {
         if (patientCreateDto.getPassword() == null || patientCreateDto.getPassword().isBlank()) {
             patientCreateDto.setPassword(entity.getPassword());
         }
-        if (!patientCreateDto.getPassword().isBlank()){
+        if (patientCreateDto.getPassword() != null){
             logger.info("Patient with id {} password change", patientId);
             String encodedPassword = passwordEncoder.encode(patientCreateDto.getPassword());
             patientCreateDto.setPassword(encodedPassword);
