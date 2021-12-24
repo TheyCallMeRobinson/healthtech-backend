@@ -9,7 +9,7 @@ services:
         source: pgdata
         target: /var/lib/postgresql/data
     ports:
-      - 35432:35432
+      - 35432:5432
       #- 35432:5432
   backend:
     #build:
