@@ -77,6 +77,8 @@ public class PatientServiceImpl implements PatientService {
 
         if (patientCreateDto.getPassword() == null || patientCreateDto.getPassword().isBlank()) {
             patientCreateDto.setPassword(entity.getPassword());
+        } else {
+            patientCreateDto.setPassword(passwordEncoder.encode(patientCreateDto.getPassword()));
         }
         if (patientCreateDto.getBirthdate() == null){
             patientCreateDto.setBirthdate(entity.getBirthdate());

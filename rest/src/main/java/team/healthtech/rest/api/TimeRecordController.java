@@ -53,7 +53,6 @@ public class TimeRecordController {
     }
 
     @GetMapping("/doctor/{doctorId}/date/{date}/time/{time}")
-    //@GetMapping("/doctor/{doctorId}?date={date}&time={time}")
     public TimeRecordDto getTimeRecordByDoctorIdAndDateAndTime(
         @PathVariable int doctorId, @PathVariable Date date, @PathVariable String time
     ) {
