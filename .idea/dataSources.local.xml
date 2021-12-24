@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-211.7628.21">
-    <data-source name="postgres@localhost" uuid="51df42ed-e78c-4eca-893d-febefd179e9a">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
-      <schema-mapping />
-    </data-source>
-    <data-source name="postgres@servachok2021.ddns.net [3]" uuid="da0f2ace-48af-4406-b362-494067d8a267">
-      <database-info product="PostgreSQL" version="13.3 (Debian 13.3-1.pgdg100+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="13.3" exact-driver-version="42.2">
+    <data-source name="postgres@servachok2021.ddns.net" uuid="19d1f21e-3ad8-4c43-ab11-208f630f0710">
+      <database-info product="PostgreSQL" version="14.1 (Debian 14.1-1.pgdg110+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="14.1" exact-driver-version="42.2">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
@@ -19,53 +15,17 @@
               <node kind="schema" qname="@" />
             </node>
             <node kind="database" qname="postgres">
-              <node kind="schema">
-                <name qname="healthtech" />
-                <name qname="ht_fix" />
-              </node>
-            </node>
-          </node>
-        </introspection-scope>
-      </schema-mapping>
-    </data-source>
-    <data-source name="postgres@192.168.0.16" uuid="0cb61723-c1e0-4d14-bdd2-be8b6f1e858f">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
-      <schema-mapping />
-    </data-source>
-    <data-source name="help_me@servachok2021.ddns.net" uuid="b2f540ca-71de-4b47-8058-af219759362d">
-      <database-info product="PostgreSQL" version="12.9 (Ubuntu 12.9-0ubuntu0.20.04.1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="12.9" exact-driver-version="42.2">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <secret-storage>master_key</secret-storage>
-      <user-name>postgres</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node negative="1">
-            <node kind="database" qname="@">
-              <node kind="schema" qname="@" />
-            </node>
-            <node kind="database" qname="help_me">
               <node kind="schema" qname="healthtech" />
             </node>
           </node>
         </introspection-scope>
       </schema-mapping>
     </data-source>
-    <data-source name="heroku_healthtech" uuid="824047c2-6cb3-4076-a067-0f7344ed6a8e">
-      <database-info product="PostgreSQL" version="13.5 (Ubuntu 13.5-2.pgdg20.04+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="13.5" exact-driver-version="42.2">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+    <data-source name="d8gsjss66jiqun@ec2-34-247-249-224.eu-west-1.compute.amazonaws.com" uuid="e3c22901-436e-4d48-b6ee-192ef50d50c5">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
       <secret-storage>master_key</secret-storage>
       <user-name>kvfgmyfcwkdbxv</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="database" qname="@">
-            <node kind="schema" qname="@" />
-          </node>
-        </introspection-scope>
-      </schema-mapping>
+      <schema-mapping />
     </data-source>
   </component>
 </project>

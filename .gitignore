@@ -3,3 +3,5 @@
 **/build
 *.jar
 !gradle/wrapper/gradle-wrapper.jar
+src/main/resources/application.yaml
+docker-compose.yaml

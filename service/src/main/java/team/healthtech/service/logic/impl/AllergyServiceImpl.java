@@ -27,13 +27,13 @@ public class AllergyServiceImpl implements AllergyService {
 
     @Override
     public void createAllergy(AllergyDto allergyDto) {
-        logger.info("New speciality create request");
+        logger.info("New allergy create request");
         allergyRepository.save(allergyMapper.toEntity(allergyDto));
     }
 
     @Override
     public List<AllergyDto> getAllAllergies() {
-        logger.info("All specialities get request");
+        logger.info("All allergies get request");
         List<AllergyDto> allergies = new ArrayList<>();
         for (var allergy : allergyRepository.findAll()) {
             allergies.add(allergyMapper.fromEntity(allergy));

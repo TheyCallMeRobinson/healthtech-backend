@@ -47,10 +47,17 @@ public class TimeRecordController {
         service.updateTimeRecord(timeRecordDto, timeRecordId);
     }
 
-    @Secured({"ROLE_ADMIN"})
     @DeleteMapping("/{timeRecordId}")
     public void deleteTimeRecordId(@PathVariable int timeRecordId) {
         service.deleteTimeRecord(timeRecordId);
+    }
+
+    @GetMapping("/doctor/{doctorId}/date/{date}/time/{time}")
+    //@GetMapping("/doctor/{doctorId}?date={date}&time={time}")
+    public TimeRecordDto getTimeRecordByDoctorIdAndDateAndTime(
+        @PathVariable int doctorId, @PathVariable Date date, @PathVariable String time
+    ) {
+        return service.getTimeRecordByDoctorIdAndDateAndTime(doctorId, date, time);
     }
 
     @GetMapping("/doctor/{doctorId}/free")

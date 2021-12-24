@@ -25,4 +25,6 @@ public interface TimeRecordService {
     List<TimeRecordDto> getAllEndedTimeRecordsOfPatient(int patientId);
 
     List<TimeRecordDto> getAllPlannedTimeRecordsOfPatient(int patientId);
+
+    TimeRecordDto getTimeRecordByDoctorIdAndDateAndTime(int doctorId, Date date, String time);
 }

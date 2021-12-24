@@ -15,6 +15,7 @@ import team.healthtech.service.model.TimeRecordDto;
 import team.healthtech.service.security.Profile;
 
 import java.sql.Date;
+import java.sql.Time;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -122,7 +123,12 @@ public class TimeRecordServiceImpl implements TimeRecordService {
             response.append("]},");
         }
         response.append("]");
-        return response.toString();
+        String strResponce = response.toString();
+        strResponce = strResponce.replaceAll("},}","}}");
+        strResponce = strResponce.replaceAll("},]","}]");
+        strResponce = strResponce.replaceAll("],}","]}");
+        strResponce = strResponce.replaceAll("\",]","\"]");
+        return strResponce;
     }
 
     @Override
@@ -144,7 +150,12 @@ public class TimeRecordServiceImpl implements TimeRecordService {
             response.append("]},");
         }
         response.append("]");
-        return response.toString();
+        String strResponce = response.toString();
+        strResponce = strResponce.replaceAll("},}","}}");
+        strResponce = strResponce.replaceAll("},]","}]");
+        strResponce = strResponce.replaceAll("],}","]}");
+        strResponce = strResponce.replaceAll("\",]","\"]");
+        return strResponce;
     }
 
     @Override
@@ -155,5 +166,10 @@ public class TimeRecordServiceImpl implements TimeRecordService {
     @Override
     public List<TimeRecordDto> getAllPlannedTimeRecordsOfPatient(int patientId) {
         return mapper.fromEntities(repository.getPlannedTimeRecordsByPatientId(patientId));
+    }
+
+    @Override
+    public TimeRecordDto getTimeRecordByDoctorIdAndDateAndTime(int doctorId, Date date, String time) {
+        return mapper.fromEntity(repository.getTimeRecordByDoctorIdAndDateAndTime(doctorId, date, Time.valueOf(time)));
     }
 }

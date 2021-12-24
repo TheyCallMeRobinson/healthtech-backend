@@ -9,7 +9,7 @@ import team.healthtech.service.model.TimeRecordDto;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-12-22T22:56:49+0300",
+    date = "2021-12-24T12:59:58+0300",
     comments = "version: 1.4.2.Final, compiler: IncrementalProcessingEnvironment from gradle-language-java-6.8.jar, environment: Java 11.0.11 (Amazon.com Inc.)"
 )
 @Component

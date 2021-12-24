@@ -16,7 +16,7 @@ public interface TimeRecordsRepository extends CrudRepository<TimeRecordEntity, 
 
     @Query("select tr " +
         "from time_records tr " +
-        "where doctor_id = ?1 and patient_id is null\n"
+        "where doctor_id = ?1 and patient_id is null "
     )
     List<TimeRecordEntity> getFreeTimeRecordsOfDoctor(Integer doctorId);
 
@@ -38,7 +38,11 @@ public interface TimeRecordsRepository extends CrudRepository<TimeRecordEntity, 
     )
     List<TimeRecordEntity> getPlannedTimeRecordsByPatientId(Integer patientId);
 
-    //TimeRecordEntity getTimeRecordEntityByDoctorId(Integer doctorId);
+    @Query("select tr\n" +
+        "from time_records tr\n" +
+        "where doctor_id = ?1 and date = ?2 and start_time = ?3 "
+    )
+    TimeRecordEntity getTimeRecordByDoctorIdAndDateAndTime(Integer doctorId, Date date, Time time);
 
     List<TimeRecordEntity> getTimeRecordEntitiesByDoctorId(Integer doctorId);
 

@@ -32,8 +32,8 @@ team/healthtech/db/provider/impl/UserSecurityProviderImpl.java
  team.healthtech.db.provider.impl.UserSecurityProviderImpl
 team/healthtech/db/entity/PatientEntity.java
  team.healthtech.db.entity.PatientEntity
-team/healthtech/db/repository/TimeRecordsRepository.java
- team.healthtech.db.repository.TimeRecordsRepository
+team/healthtech/db/entity/DiseaseEntity.java
+ team.healthtech.db.entity.DiseaseEntity
 team/healthtech/db/entity/SpecialityEntity.java
  team.healthtech.db.entity.SpecialityEntity
 team/healthtech/db/entity/UserEntity.java
@@ -46,5 +46,5 @@ team/healthtech/db/entity/DoctorEntity.java
  team.healthtech.db.entity.DoctorEntity
 team/healthtech/db/entity/AdminEntity.java
  team.healthtech.db.entity.AdminEntity
-team/healthtech/db/entity/DiseaseEntity.java
- team.healthtech.db.entity.DiseaseEntity
+team/healthtech/db/repository/TimeRecordsRepository.java
+ team.healthtech.db.repository.TimeRecordsRepository

@@ -22,7 +22,6 @@ public class AllergyController {
         this.allergyService = allergyService;
     }
 
-    @Secured({"ROLE_ADMIN", "ROLE_DOCTOR"})
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public void createAllergy(
